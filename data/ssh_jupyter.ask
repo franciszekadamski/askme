@@ -1,0 +1,9 @@
+start jupyter notebook without browser and at port 8000
+--- question
+jupyter notebook --no-browser --port=8000
+--- answer
+set up a ssh tunel for jupyter notebook where jupyter is on port 8000 on sever, and we want to access it remotely using port 8080 on client's end
+--- question
+ssh -L 8080:localhost:8000 ubuntu@10.10.1.175
+--- answer
+

@@ -1,0 +1,51 @@
+[
+    {
+        "question": "E4 on string 6",
+        "answer": "0"
+    },
+    {
+        "question": "F4 on string 6",
+        "answer": "1"
+    },
+    {
+        "question": "F#4 on string 6",
+        "answer": "2"
+    },
+    {
+        "question": "G4 on string 6",
+        "answer": "3"
+    },
+    {
+        "question": "G#4 on string 6",
+        "answer": "4"
+    },
+    {
+        "question": "A4 on string 6",
+        "answer": "5"
+    },
+    {
+        "question": "A#4 on string 6",
+        "answer": "6"
+    },
+    {
+        "question": "B4 on string 6",
+        "answer": "7"
+    },
+    {
+        "question": "C5 on string 6",
+        "answer": "8"
+    },
+    {
+        "question": "C#5 on string 6",
+        "answer": "9"
+    },
+    {
+        "question": "D5 on string 6",
+        "answer": "10"
+    },
+    {
+        "question": "D#5 on string 6",
+        "answer": "11"
+    }
+
+]

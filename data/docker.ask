@@ -1,0 +1,39 @@
+show containters in gaston stack
+--- question
+docker stack ps gaston
+--- answer
+remove gaston stack
+--- question
+docker stack rm gaston
+--- answer
+show all local containers
+--- question
+docker ps -a
+--- answer
+run docker compose in folder with docker compose
+--- question
+docker compose up
+--- answer
+basic files needed in docker compose folder
+--- question
+Dockerfile
+docker-compose.yml
+requirements.txt
+app.py
+--- answer
+In Dockerfile: specify base sytem image as alpine for python 3.7
+--- question
+FROM python:3.7-alpine
+--- answer
+In Dockerfile: specify working direcotry as /code
+--- question
+WORKDIR /code
+--- answer
+In Dockerfile: spcify environment for flask application
+--- question
+ENV FLASK_APP=app.py
+--- answer
+In Dockerfile: specify run host for flask as base port
+--- question
+ENV FASK_RUN_HOST=0.0.0.0
+--- answer

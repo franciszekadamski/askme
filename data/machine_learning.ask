@@ -1,0 +1,26 @@
+Steps for using sklearn API
+--- answer
+choose model
+choose hyperparameters
+arrange data
+fit model
+apply model
+--- question
+three basic methods for sklearn models 
+--- answer
+fit
+predict
+transform
+--- question
+shape of features matrix 
+--- answer
+(n_samples, n_features)
+--- question
+import linear regression model in sklearn
+--- answer
+from sklearn.linear_model import LinearRegression
+--- question
+instantiate linear regression model with most common hyperparameters
+--- answer
+model = LinearRegression(copy_X=True, fit_intercept=True, n_jobs=1, normalize=False)
+---

@@ -1,0 +1,50 @@
+[
+    {
+        "question": "B3 on string 5",
+        "answer": "0"
+    },
+    {
+        "question": "C4 on string 5",
+        "answer": "1"
+    },
+    {
+        "question": "C#4 on string 5",
+        "answer": "2"
+    },
+    {
+        "question": "D4 on string 5",
+        "answer": "3"
+    },
+    {
+        "question": "D#4 on string 5",
+        "answer": "4"
+    },
+    {
+        "question": "E4 on string 5",
+        "answer": "5"
+    },
+    {
+        "question": "F4 on string 5",
+        "answer": "6"
+    },
+    {
+        "question": "F#4 on string 5",
+        "answer": "7"
+    },
+    {
+        "question": "G4 on string 5",
+        "answer": "8"
+    },
+    {
+        "question": "G#4 on string 5",
+        "answer": "9"
+    },
+    {
+        "question": "A4 on string 5",
+        "answer": "10"
+    },
+    {
+        "question": "A#4 on string 5",
+        "answer": "11"
+    }	
+]

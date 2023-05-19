@@ -1,0 +1,99 @@
+[
+    {
+        "question": "show containers in gaston stack",
+        "answer": "docker stack ps gaston"
+    },
+    {
+        "question": "remove gaston stack",
+        "answer": "docker stack rm gaston"
+    },
+    {
+        "question": "show all local containers",
+        "answer": "docker ps -a"
+    },
+    {
+        "question": "show local docker images",
+        "answer": "docker images"
+    },
+    {
+        "question": "run docker compose in folder with docker compose",
+        "answer": "docker compose up"
+    },
+    {
+        "question": "basic files needed in docker compose folder",
+        "answer": "Dockerfile, docker-compose.yml, requirements.txt, app.py"
+    },
+    {
+        "question": "In Dockerfile: specify base system image as alpine for python 3.7",
+        "answer": "FROM python:3.7-alpine"
+    },
+    {
+        "question": "In Dockerfile: specify working directory as /code",
+        "answer": "WORKDIR /code"
+    },
+    {
+        "question": "In Dockerfile: specify environment for flask application",
+        "answer": "ENV FLASK_APP=app.py"
+    },
+    {
+        "question": "In Dockerfile: specify run host for flask as base port",
+        "answer": "ENV FLASK_RUN_HOST=0.0.0.0"
+    },
+    {
+        "question": "In Dockerfile: install gcc, musl-dev and linux-headers for alpine",
+        "answer": "RUN apk add --no-cache gcc musl-dev linux-headers"
+    },
+    {
+        "question": "In Dockerfile: copy requiremets to container",
+        "answer": "COPY requirements.txt requirements.txt"
+    },
+    {
+        "question": "In Dockerfile: install python modules using pip from requirements.txt file",
+        "answer": "RUN pip install -r requirements.txt"
+    },
+    {
+        "question": "In Dockerfile: make port 5000 visible",
+        "answer": "EXPOSE 5000"
+    },
+    {
+        "question": "In Dockerfile: copy current dir into container",
+        "answer": "COPY . ."
+    },
+    {
+        "question": "In Dockerfile: execute 'flask' and 'run' after creation of a container",
+        "answer": "CMD ['flask', 'run']"
+    },
+    {
+        "question": "check what environment variables are available to the web service",
+        "answer": "docker compose run web env"
+    },
+    {
+        "question": "run docker compose in detached mode",
+        "answer": "docker compose up -d"
+    },
+    {
+        "question": "stop docker compose, for example that is run in detached mode",
+        "answer": "docker compose stop"
+    },
+    {
+        "question": "stop and remove containers with deleting volumes",
+        "answer": "docker compose down --volumes"
+    },
+    {
+        "question": "In docker-compose.yml: specify version",
+        "answer": "version: 3.9"
+    },
+    {
+        "question": "In docker-compose.yml: basic fields for web service",
+        "answer": "build, ports, volumes, environment"
+    },
+    {
+        "question": "In docker-compose.yml: field for redis with value",
+        "answer": "image: 'redis:alpine'"
+    },    
+    {
+        "question": "In docker-compose.ymll: services for web-redis",
+        "answer": ""
+    }
+]
+
