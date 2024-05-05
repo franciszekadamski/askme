@@ -31,7 +31,7 @@ def main(filename="data/docker"):
         while similarity < threshold:
             os.system("clear")
             response = multiline_input("==========================================\nQuestion {}/{} | Score {}/{} | Score [%] {}\n==========================================\n{}\n\n".format(n + 1, len(content), score, len(content), round(100*score/len(content), 2), cell["question"]))
-            similarity = jellyfish.jaro_distance(response, cell["answer"])
+            similarity = jellyfish.jaro_similarity(response, cell["answer"])
             print("\n{}%".format(int(similarity * 100)))
             print("\n\n{}\n".format(cell["answer"]))
             decision = input()
