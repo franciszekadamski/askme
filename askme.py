@@ -1,20 +1,24 @@
 #!/usr/bin/python3
 
+import sys
+
 import askmelib
 from askmelib import *
 
-__doc__ = """Parser for Askme app; 
-Press "r" to repeat question; 
-Press "s" to skip question; 
-Press "q" to quit; 
+
+__doc__ = """Parser for Askme app;
+Press "r" to repeat question;
+Press "s" to skip question;
+Press "q" to quit;
 """
-    
+
+
 def main(filename="data/docker"):
     """Ask questions
     Source file should be passed without extension and there should be .json file with given name
     Parameters:
         filename : str
-    Output: 
+    Output:
         None
     """
     ask_to_pickle(filename + ".ask")
@@ -22,9 +26,8 @@ def main(filename="data/docker"):
     random.shuffle(content)
     fails = 0
     threshold = 0.9
-    break_main_loop = False
     score = 1
-    
+
     for n, cell in enumerate(content):
         score = len(content) - fails
         similarity = 0
@@ -45,16 +48,14 @@ def main(filename="data/docker"):
                 similarity = 0
             elif decision == "q":
                 similarity = 1
-                break_main_loop = True
+                sys.exit(1)
 
-        if break_main_loop:
-            break 
-            
     print(round(100*score/len(content), 2))
 
-parser = argparse.ArgumentParser()
-parser.add_argument('file', type=str, help=__doc__)
-args = parser.parse_args()
 
-main(args.file)
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument('file', type=str, help=__doc__)
+    args = parser.parse_args()
 
+    main(args.file)
